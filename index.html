@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Un pequeño universo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="universe-container">
+      <div id="background-stars"></div>
+      
+      <header class="universe-header">
+        <h1>Un pequeño universo</h1>
+        <p class="subtitle">Entre tantas estrellas, hay algunas que tienen algo que decirte...</p>
+        <span class="instruction">Toca las estrellas para descubrir sus mensajes</span>
+      </header>
+
+      <main class="stars-canvas" id="stars-canvas">
+        <!-- Las estrellas interactivas se cargan desde TypeScript -->
+      </main>
+
+      <!-- Modal para los mensajes -->
+      <div id="message-modal" class="modal hidden">
+        <div class="modal-content" id="modal-content">
+          <button id="close-modal" class="close-btn" aria-label="Cerrar mensaje">&times;</button>
+          <p id="modal-text"></p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
